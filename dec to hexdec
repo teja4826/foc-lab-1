@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int decimal = 172;
+    char hexadecimal[100];
+    sprintf(hexadecimal, "%x", decimal);
+    printf("Hexadecimal representation of %d: %s\n", decimal, hexadecimal);
+    return 0;
+}
