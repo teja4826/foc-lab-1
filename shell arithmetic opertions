@@ -1,0 +1,42 @@
+#!/bin/bash
+
+x=3
+
+y=5
+
+echo"x=3,y=5"
+
+echo"Addtion of x & y"
+echo $(($x+$y))
+
+echo"sub of x & y"
+echo $(($x-$y))
+
+echo "mul of x & y"
+echo $(($x*$y))
+
+echo "div of x& y"
+echo $(($x / $y))
+
+echo "dividing  x by 5,x="
+((x/=5))
+echo $x
+
+
+
+
+
+
+OUTPUT:_________
+$ ./shell.sh
+echo x=3,y=5: 
+Addtion of x & y: 
+8
+./shell.sh: line 12: echosub of x & y: command not found
+-2
+mul of x & y
+15
+div of x& y
+0
+dividing  x by 5,x=
+0
